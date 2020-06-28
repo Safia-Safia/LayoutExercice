@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bcg">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#FEFEFE"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/subtitle"
+        android:textColor="#FEFEFE"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:hint="@string/mail"
+        android:inputType="textEmailAddress"
+        android:padding="13dp"
+        android:textColorHint="#FEFEFE"
+        app:layout_constraintEnd_toEndOf="@id/subTitle"
+        app:layout_constraintStart_toEndOf="@id/image_mail"
+        app:layout_constraintTop_toBottomOf="@id/subTitle" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        app:srcCompat="@drawable/mail"
+        android:layout_marginEnd="1dp"
+        android:padding="3dp"
+        app:layout_constraintTop_toBottomOf="@id/subTitle"
+        app:layout_constraintEnd_toStartOf="@+id/edit_email"
+        app:layout_constraintStart_toStartOf="@id/edit_email"
+        android:id="@+id/image_mail"
+        />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:hint="@string/mail"
+        android:inputType="textPassword"
+        android:padding="13dp"
+        android:textColorHint="#FEFEFE"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="@id/subTitle"
+        app:layout_constraintStart_toEndOf="@id/image_mail"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+    <ImageView
+        android:id="@+id/image_password"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/shape"
+        android:padding="3dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/edit_password"
+        app:layout_constraintTop_toBottomOf="@id/image_mail"
+        app:srcCompat="@drawable/cadenas" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:textStyle="bold"
+        android:text="@string/login"
+        android:textColor="#FEFEFE"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_password"
+        android:background="@drawable/button_style"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#FFF"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/text_orYouCan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/or_you_can"
+        android:textColor="#FEFEFE"
+        android:textAlignment="center"
+        android:padding="15dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:textStyle="bold"
+        android:text="@string/login"
+        android:textColor="#FEFEFE"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/text_orYouCan"
+        android:background="@drawable/button_style"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

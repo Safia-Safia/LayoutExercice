@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LayoutExercice</string>
+    <string name="or_you_can">or you can</string>
+    <string name="login">LOGIN</string>
+    <string name="mail">your.email@yours.com</string>
+    <string name="subtitle">Seamless Social Sharing, it\'s that easy !</string>
+    <string name="title">POSTLY</string>
+    <string name="password">Password</string>
+    <string name="newAcccount">CREATE AN ACCOUNT</string>
+</resources>
